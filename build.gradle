@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.coding'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.13
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.modelmapper:modelmapper:2.3.7'
+    testImplementation 'com.squareup.okhttp:okhttp:2.5.0'
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    testImplementation('org.junit.jupiter:junit-jupiter:5.4.0')
+}
+
+test {
+    useJUnitPlatform()
+}
